@@ -1,0 +1,293 @@
+html {
+	font-family: Barlow, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: rgba(3, 25, 38, 1);
+	display: flex;
+	padding: 32px 96px;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	background: url(images/bg.svg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	margin: 0;
+	height: 100vh;
+}
+
+.header {
+	display: flex;
+	height: 120px;
+	width: 100%;
+	padding: 8px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;
+	align-self: stretch;
+	margin: 8px 0;
+}
+
+.header h1 {
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+hr {
+	min-width: 100%;
+}
+
+.navbar {
+	display: flex;
+	padding: 16px 32px;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 16px;
+	align-self: stretch;
+	width: 100%;
+}
+
+.navbar div {
+	display: flex;
+	align-items: flex-end;
+	gap: 32px;
+}
+
+.body {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	width: 100%;
+}
+
+.section {
+    display: flex;
+    width: 100%;
+    /* min-width: 1232px; */
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+}
+
+.section-contact {
+    display: flex;
+    width: 100%;
+    /* min-width: 400px; */
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+}
+
+.h1-home {
+	text-align: center;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+p {
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+.text {
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+    width: 100%;
+}
+
+.flag {
+	width: 60%;
+	max-width: 410px;
+	max-height: 239px;
+}
+
+/* aside settings */
+
+.aside {
+	display: flex;
+	width: 20%;
+	max-width: 308px;
+    min-width: 308px;
+	padding: 40px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	flex: 1 0 0;
+	align-self: stretch;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+}
+
+.aside h3 {
+	text-decoration: underline;
+}
+
+.events-li {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	align-self: stretch;
+}
+
+.dates {
+	text-align: justify;
+	font-variant-numeric: lining-nums tabular-nums;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: normal;
+	padding: 0;
+	min-width: 64px;
+}
+
+.event-name {
+	display: flex;
+	align-items: flex-start;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	padding: 0;
+}
+
+.pics {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-top: 16px;
+	width: 75%;
+	padding: 16px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+}
+
+/* table settings */
+table,
+tr,
+td,
+th {
+	padding: 8px;
+	margin: 4px;
+	border: 1px solid;
+}
+
+/* header settings */
+h1,
+h2,
+h4 {
+	padding: 0;
+	margin: 0;
+}
+
+/* list settings */
+ul, ol, li {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.list {
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    padding-left: 32px;
+    margin: 0;
+    width: 100%;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	font-size: 1rem;
+	width: 10rem;
+}
+
+.section .contactFormHeader {
+	text-align: left;
+	float: left;
+}
+
+.contactForm {
+	form {
+		width: 100%;
+		margin: 0 auto; /* Center the form horizontally */
+		padding: 20px;
+		border-radius: 5px;
+		text-align: left;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 5px;
+		width: 100%;
+		line-height: 2rem;
+		font-weight: 600;
+	}
+
+	input#firstName,
+	input#lastName,
+	input#email,
+	input#emailConfirm {
+		width: 100%;
+		background-color: rgba(217, 217, 217, 0.75);
+		border-radius: 0.5rem;
+		border-color: rgba(217, 217, 217, 0.75);
+		padding: 8px, 160px, 8px, 8px;
+		height: 1.4rem;
+	}
+
+	input[type='text'],
+	textarea {
+		width: 100%;
+		background-color: rgba(217, 217, 217, 0.75);
+		border-radius: 0.5rem;
+		border-color: rgba(217, 217, 217, 0.75);
+		padding: 8px, 160px, 8px, 8px;
+		box-shadow: 1px 1px 1.5px 0px rgba(0, 0, 0, 0.25);
+	}
+
+	input[type='submit'] {
+		background-color: rgba(3, 25, 38, 1);
+		color: white;
+		padding: 8px, 16px, 8px, 16px;
+		border: none;
+		border-radius: 10px;
+		cursor: pointer;
+		width: 4rem;
+		height: 1.5rem;
+		margin-top: 0.5rem;
+	}
+}
+
+#officeHours {
+	white-space: nowrap;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.5rem;
+}
