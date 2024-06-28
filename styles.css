@@ -17,6 +17,7 @@ html {
 }
 
 .header {
+	position: relative;
 	display: flex;
 	height: 120px;
 	width: 100%;
@@ -37,6 +38,7 @@ html {
 }
 
 hr {
+	position: relative;
 	min-width: 100%;
 }
 
@@ -56,6 +58,14 @@ hr {
 	gap: 32px;
 }
 
+.navbar div a {
+	text-decoration: none;
+}
+
+.navbar div a:hover {
+	color: orangered;
+}
+
 .body {
 	display: flex;
 	align-items: center;
@@ -66,33 +76,31 @@ hr {
 }
 
 .section {
-    display: flex;
-    width: 100%;
-    /* min-width: 1232px; */
-    padding: 64px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    flex: 1 0 0;
-    align-self: stretch;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+	display: flex;
+	width: 100%;
+	padding: 64px;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
 }
 
 .section-contact {
-    display: flex;
-    width: 100%;
-    /* min-width: 400px; */
-    padding: 64px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    flex: 1 0 0;
-    align-self: stretch;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
+	display: flex;
+	width: 100%;
+	padding: 64px;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
 }
 
 .h1-home {
@@ -116,7 +124,7 @@ p {
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
-    width: 100%;
+	width: 100%;
 }
 
 .flag {
@@ -125,13 +133,11 @@ p {
 	max-height: 239px;
 }
 
-/* aside settings */
-
 .aside {
 	display: flex;
 	width: 20%;
 	max-width: 308px;
-    min-width: 308px;
+	min-width: 308px;
 	padding: 40px;
 	flex-direction: column;
 	align-items: flex-start;
@@ -185,7 +191,6 @@ p {
 	box-shadow: 0px 4px 4px 0px rgba(3, 25, 38, 0.25);
 }
 
-/* table settings */
 table,
 tr,
 td,
@@ -195,7 +200,6 @@ th {
 	border: 1px solid;
 }
 
-/* header settings */
 h1,
 h2,
 h4 {
@@ -203,21 +207,22 @@ h4 {
 	margin: 0;
 }
 
-/* list settings */
-ul, ol, li {
-    text-align: left;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+ul,
+ol,
+li {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
 }
 
 .list {
-    display: inline-block;
-    text-align: left;
-    padding: 0;
-    padding-left: 32px;
-    margin: 0;
-    width: 100%;
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	padding-left: 32px;
+	margin: 0;
+	width: 100%;
 }
 
 .contact {
@@ -236,7 +241,7 @@ ul, ol, li {
 .contactForm {
 	form {
 		width: 100%;
-		margin: 0 auto; /* Center the form horizontally */
+		margin: 0 auto;
 		padding: 20px;
 		border-radius: 5px;
 		text-align: left;
@@ -290,4 +295,11 @@ ul, ol, li {
 	display: flex;
 	flex-direction: column;
 	line-height: 1.5rem;
+}
+
+img.idahoSmall {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 90px;
 }
